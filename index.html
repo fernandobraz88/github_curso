@@ -33,6 +33,25 @@
     <p><b>git checkout:</b> Utilizado para mudar a branch ou restaurar arquivos</p>
     <p id="gitignore"><b>.gitignore</b> Não é um comando do git, mas sim um arquivo criado no projeto que faz com que o git ignore o rastreio de determinados arquivos (Normalmente aquivos gerados automaticamente ou dados sensiveis)</p>
     <p><b>git reset:</b> Retorna todos os arquivos ao estado que está a branch escolhida ex: <span class="git"> git</span> reset --hard origin/master (fez o git reset baseado na brach "master")</p>
+
+    <h2>Trabalhando com Branches</h2>
+
+    <h3>O que são branches?</h3>
+    <p>Branches são versões de um mesmo projeto, nelas podem se testar novas funcionalidades sem interferir no codigo fonte principal.</p>
+    <p>O codigo fonte principal de um projeto é criado em uma branch <b>'main'</b>  ou <b>'master'</b> durante a inicialização de um projeto e alterado após a união das branches que foram aprovadas como funcionais</p>
+
+    <h3>1-Verificando as branches de um projeto</h3>
+    <p>Para verificar as branches de um projeto utiliza-se o comando <b>git branch</b></p>
+
+    <h3>2-Criando uma nova Branch</h3>
+    <p><b>git branch (+nome da nova branch)</b></p>
+
+    <h3>3-Deletando uma branch</h3>
+    <p><b>git branch -d ou --delete (+nome da branch a ser deletada)</b></p>
+    <p>Obs: Não é comum deletar-se branches, normalmente guardamos o historico do trabalho. Geralmente se usa o delete quando o branch é criado de forma erronea</p>
+
+    <h3>4-Mudando de Branch</h3>
+    <p><b>git checkout -b (+nome da branch destino)</b></p>
     
 </body>
 </html>
