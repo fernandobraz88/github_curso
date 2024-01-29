@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e Github</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Git e Github</h1>
+
+    <h2>Diferenças entre Git e Github</h2>
+    <p><b>Git:</b> É um sistema de controle distribuido usado para rastrear alterações no código-fonte durante o desenvolvimento de software. Ele permite que várias pessoas trabalhem em um projeto simultaneamente, sem interferir no trabalho umas das outras.  </p>
+    <p><b>Github:</b> É uma plataforma de hospedagem e colaboração para desenvolvimento de software baseado no sistema de controle de versão Git. Ele permite que desenvolvedores armazenem e compartilhem seus projetos utilizando o Git, tornando o processo de colaboração mais eficiente e acessível.</p>
+
+    <h2>Status dos arquivos no Git</h2>
+    <p>U (Untracked):</p>
+    <P>A (Added):</P>
+    <p>M (Modified):</p>
+
+    <h2>Comandos Basicos do Git</h2>
+    <p><b>git status: </b>Monitora as mudanças de códigos entre o que esta na sua máquina e o que está no github</p>
+    <p><b>git init:</b> Inicia um projeto, ou seja, faz com que a pasta e os arquivos sejam restreados pelo git</p>
+    <p><b>git remote</b> É usado para lidar com repositórios remotos.</p>
+    <p><b>git add:</b> Faz com que novos arquivos adicionados ao projeto sejam rastreados pelo git, tambem seve para adicionar essas alterações antes de commitar</p>
+    <p><b>git commit:</b> Confirma, salva as alterações do projeto e deixa uma mensagem de especificação sobre essas alterações</p>
+    <p><b>git push:</b> Envia as alterações salvas para o repositório remoto</p>
+    <p><b>git pull:</b> É utilizado para buscar e integrar alterações de um repositório remoto para o branch atual em seu repositório local.</p>
+    <p><b>git clone:</b> É utilizado para copiar o projeto completamente do repositorio remoto (normalmente utilizado quando se entra em uma empresa e ja se tem o projeto em andamento)</p>
+    <p><b>git rm:</b> Remove arquivos do rastreio do git, caso o dev queira adicionar novamente, deve-se usar o comando git add</p>
+    <p><b>git log:</b> Mostra em forma de Log, as alterações do projeto. relacionando os commits ao autor dos mesmos com data e hora</p>
+    <p><b>git mv:</b> Move os arquivos de pasta e, caso o dev queira, renomeia</p>
+    <p><b>git checkout:</b> Utilizado para mudar a branch ou restaurar arquivos</p>
+    <p id="gitignore"><b>.gitignore</b> Não é um comando do git, mas sim um arquivo criado no projeto que faz com que o git ignore o rastreio de determinados arquivos (Normalmente aquivos gerados automaticamente ou dados sensiveis)</p>
+    <p><b>git reset:</b> Retorna todos os arquivos ao estado que está a branch escolhida ex: <span class="git"> git</span> reset --hard origin/master (fez o git reset baseado na brach "master")</p>
+
+    <h2>Trabalhando com Branches</h2>
+
+    <h3>O que são branches?</h3>
+    <p>Branches são versões de um mesmo projeto, nelas podem se testar novas funcionalidades sem interferir no codigo fonte principal.</p>
+    <p>O codigo fonte principal de um projeto é criado em uma branch <b>'main'</b>  ou <b>'master'</b> durante a inicialização de um projeto e alterado após a união das branches que foram aprovadas como funcionais</p>
+
+    <h3>1 - Verificando as branches de um projeto</h3>
+    <p>Para verificar as branches de um projeto utiliza-se o comando <b>git branch</b></p>
+
+    <h3>2 - Criando uma nova Branch</h3>
+    <p><b>git branch (+nome da nova branch)</b></p>
+
+    <h3>3 - Deletando uma branch</h3>
+    <p><b>git branch -d ou --delete (+nome da branch a ser deletada)</b></p>
+    <p>Obs: Não é comum deletar-se branches, normalmente guardamos o historico do trabalho. Geralmente se usa o delete quando o branch é criado de forma erronea</p>
+
+    <h3>4 - Mudando de Branch</h3>
+    <p><b>git checkout -b (+nome da branch destino)</b></p>
+
+    <h3>5 - Unindo Branches</h3>
+    <p><b>git merge (+nome da branch)</b></p>
+    
+</body>
+</html>
