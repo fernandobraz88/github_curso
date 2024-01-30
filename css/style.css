@@ -2,11 +2,12 @@ body{
     background-color: rgb(128, 125, 125);
 }
 
+h2{
+    margin-top: 50px;
+}
+
 #gitignore{
     color: red;
-}
-.git{
-    color:yellow
 }
 
 .paragrafo1{
