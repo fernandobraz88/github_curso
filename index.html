@@ -92,5 +92,26 @@
         <li>manutenção do projeto (Rollbacks)</li>
     </ul>
     <p>Criando <b>Private Branches</b> a partir da nossa branch de trabalho é possivel desenvolver toda a tarefa, fazer diversos commits sem interferir no <b>git log</b> e ao final de tudo, repassar as alterações para a branch de trabalho para fazer o <b>git pull</b></p>
+
+    <h4>Comando para editar os commits da private branch:</h4>
+    <p><b>git rebase</b> +branch de trabalho +private branch -i</p>
+    <p>Após esse comando, todos os commits e suas mensagens serão exibidas com os respectivos status e as opções de edição.</p>
+    <ul>
+        <b>Principais comandos do rebase:</b>
+        <li>pick: utiliza o commit da forma que está</li>
+        <li>squash: exclui a mensagem e utiliza o codigo no proximo commit</li>
+        <li>reword: usa o commit e edita a mensagem</li>
+    </ul>
+    <p>Por fim, 'esc' e digita :x!</p>
+
+    <h4>Boas mensagens de commits:</h4>
+    <ul>
+        <li>Separar o <b>assunto</b> do corpo da mensagem</li>
+        <li>Assunto com no <b>no máximo 50 caracteres</b></li>
+        <li>Assunto com <b>letra inicial maiúscula</b></li>
+        <li>Corpo com no <b>máximo 72 caracteres</b></li>
+        <li>Explicar <b>por que e como</b> do commit, e não como o código foi escrito</li>
+    </ul>
+    <p>Para separar o assunto do corpo do commit, antes de fechar as aspas do -m aperta 'enter' para criar quebras de linhas e finalizar o fechmento das aspas ao fim do corpo do commit</p>
 </body>
 </html>
