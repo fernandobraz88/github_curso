@@ -32,10 +32,17 @@
     <p><b>git clone:</b> É utilizado para copiar o projeto completamente do repositorio remoto (normalmente utilizado quando se entra em uma empresa e ja se tem o projeto em andamento)</p>
     <p><b>git rm:</b> Remove arquivos do rastreio do git, caso o dev queira adicionar novamente, deve-se usar o comando git add</p>
     <p><b>git log:</b> Mostra em forma de Log, as alterações do projeto. relacionando os commits ao autor dos mesmos com data e hora</p>
+    <p><b>git shortlog:</b> Mostra um log resumido do projeto</p>
     <p><b>git mv:</b> Move os arquivos de pasta e, caso o dev queira, renomeia</p>
     <p><b>git checkout:</b> Utilizado para mudar a branch ou restaurar arquivos</p>
     <p ><b><span id="gitignore">.gitignore</span>:</b> Não é um comando do git, mas sim um arquivo criado no projeto que faz com que o git ignore o rastreio de determinados arquivos (Normalmente aquivos gerados automaticamente ou dados sensiveis)</p>
-    <p><b>git reset:</b> Retorna todos os arquivos ao estado que está a branch escolhida ex: <span> git</span> reset --hard origin/master (fez o git reset baseado na brach "master")</p>
+    <p><b>git reset:</b> Retorna todos os arquivos ao estado que está a branch escolhida ex: <span> git</span> reset --hard origin/master (fez o git reset baseado na branch "master")</p>
+    <p><b>git show:</b> Exibe as modificações das branches entre cada commit</p>
+    <p><b>git diff:</b> Exibe as diferenças entre as branches diferentes</p>
+    <ul>
+        <li><b>git diff (sem parametros) </b> - exibe a diferença entre a branch atual e a remota</li>
+        <li><b>dit diff HEAD:(arquivo1) (arquivo2)</b> -  exibe a diferença entre 2 arquivos</li>
+    </ul>
 <hr>
     <h2>Trabalhando com Branches</h2>
 
@@ -93,7 +100,7 @@
     </ul>
     <p>Criando <b>Private Branches</b> a partir da nossa branch de trabalho é possivel desenvolver toda a tarefa, fazer diversos commits sem interferir no <b>git log</b> e ao final de tudo, repassar as alterações para a branch de trabalho para fazer o <b>git pull</b></p>
 
-    <h4>Comando para editar os commits da private branch:</h4>
+    <h3>Comando para editar os commits da private branch:</h3>
     <p><b>git rebase</b> +branch de trabalho +private branch -i</p>
     <p>Após esse comando, todos os commits e suas mensagens serão exibidas com os respectivos status e as opções de edição.</p>
     <ul>
@@ -104,7 +111,7 @@
     </ul>
     <p>Por fim, 'esc' e digita :x!</p>
 
-    <h4>Boas mensagens de commits:</h4>
+    <h3>Boas mensagens de commits:</h3>
     <ul>
         <li>Separar o <b>assunto</b> do corpo da mensagem</li>
         <li>Assunto com no <b>no máximo 50 caracteres</b></li>
@@ -113,5 +120,17 @@
         <li>Explicar <b>por que e como</b> do commit, e não como o código foi escrito</li>
     </ul>
     <p>Para separar o assunto do corpo do commit, antes de fechar as aspas do -m aperta 'enter' para criar quebras de linhas e finalizar o fechmento das aspas ao fim do corpo do commit</p>
+    <hr>
+    <h2>Administrando um Repositório</h2>
+    <h3>Limpando os arquivos Untracked:</h3>
+    <p>Após verificar com <b>git status</b> quais arquivos são necessarios ou não para serem enviados ao repositorio remoto, utiliza-se <b>git add</b> nos arquivos desejados e <b>git clean -f</b> para os demais</p>
+    <h3>Otimização de repositório:</h3>
+    <p>O próprio git otimiza a performance do repositório utilizando um comando de garbage colector, excluindo arquivos irrelevantes e comprimindo outros. <b>git gc</b></p>
+    <h3>Checando a integridade dos arquivos:</h3>
+    <p>Rotineiramente devemos checar a integridade dos arquivos do repositório (conectividade e se há arquivos corrompidos), para isso utilizamos o comando <b>git fsck</b> (File System ChecK)</p>
+    <h3>Reflog:</h3>
+    <p>O <b>git reflog</b> mapeia a movimentação do repositorio como um todo, de todas as branches</p>
+   
+    <h2>Explorando o Github</h2>
 </body>
 </html>
