@@ -2,8 +2,8 @@
 
 Esse repositório contém uma pagina html com um **resumo completo** dos meus estudos sobre git e github.
 * Conceitos sobre git e github 
-* Principais comandos gitF
+* Principais comandos git
 * Fluxo de trabalho e soluçõs de alguns problemas
 
 ## Markdown:
-Esse repositório tambem possui uma pagina com enfase em _markdown_
+Esse repositório também possui uma pagina com ênfase em _markdown_
