@@ -47,8 +47,8 @@
     <h2>Trabalhando com Branches</h2>
 
     <h3>O que são branches?</h3>
-    <p>Branches são versões de um mesmo projeto, nelas podem se testar novas funcionalidades sem interferir no codigo fonte principal.</p>
-    <p>O codigo fonte principal de um projeto é criado em uma branch <b>'main'</b>  ou <b>'master'</b> durante a inicialização de um projeto e alterado após a união das branches que foram aprovadas como funcionais</p>
+    <p>Branches são versões de um mesmo projeto, nelas podem se testar novas funcionalidades sem interferir no código-fonte principal.</p>
+    <p>O código-fonte principal de um projeto é criado em uma branch <b>'main'</b>  ou <b>'master'</b> durante a inicialização de um projeto e alterado após a união das branches que foram aprovadas como funcionais</p>
 
     <h3>1 - Verificando as branches de um projeto</h3>
     <p class="paragrafo1">Para verificar as branches de um projeto utiliza-se o comando <b>git branch</b></p>
@@ -130,7 +130,45 @@
     <p>Rotineiramente devemos checar a integridade dos arquivos do repositório (conectividade e se há arquivos corrompidos), para isso utilizamos o comando <b>git fsck</b> (File System ChecK)</p>
     <h3>Reflog:</h3>
     <p>O <b>git reflog</b> mapeia a movimentação do repositorio como um todo, de todas as branches</p>
-   
+   <hr>
+
     <h2>Explorando o Github</h2>
+
+    <h3>Criando Repositório</h3>
+    <p>Ao inicializar um repositório no github temos algumas informações importantes para preencher, algumas delas sao:</p>
+    <ul>
+        <li><b>Nome:</b> Deve ser facil e objetivo</li>
+        <li><b>Descrição:</b> Detalhamento do que se trata o projeto</li>
+        <li><b>Licença:</b> Proteção para o que outras pessoas podem fazer com seu código</li>
+        <li><b>Add git ignore:</b> O github fornece o git ignore pre-definido baseado no que o usuário selecionar como tecnologias de desenvolvimento</li>
+    </ul>
+    <p>Tudo poderá ser alterado ao longo do projeto</p>
+
+    <h3>Aba Issues</h3>
+    <p>Na <b>aba Issues</b> podemos criar tarefas ou solicitar ajuda pra  solução de possiveis bugs no código</p>
+    <p>Interessante para a organização se manter ciente do que ainda <b>precisa fazer ou corrigir</b></p>
+    <p>A issue deve ter uma <b>label </b>e tambem um <b>responsável</b>, pode-se também utilizar o <b>markdown</b> (assim como no README.md)</p>
+
+    <h3>Aba Pull Request</h3>
+    <p>É aba onde os colaboradores enviam os codigos para resolver as issues ou implementar novas funcionalidades</p>
+    <p>O ideal é que os codigos não sejam inseridos diretamente na origem (main/master), mas que passe por um pull request e seja analizado</p>
+
+    <h3>Aba Actions</h3>
+    <p>É uma plataforma de integração contínua e entrega contínua (CI/CD) que permite automatizar a sua compilação, testar e pipeline de implantação. É possível criar fluxos de trabalho que criam e testam cada pull request no seu repositório, ou implantar pull requests mesclados em produção.</p>
+    
+    <h3>Aba Projects</h3>
+    <p>É onde se cria um projeto e organiza as tarefas em um quadro, ajudando a <b>organizar a equipe</b> de devs criando <b>notas</b> que podem virar <b>issues</b></p>
+    <p>Estruturas de intesse: Backlog, Retorno de qualidade, Desenvolvimento, Teste, Finlizadas</p>
+    <p>Lembra o Software <b>Trello</b></p>
+
+    <h3>Aba Wiki</h3>
+    <p>É onde se faz uma documentação mais detalhada  do projeto, ou seja, é onde vai descrever as funcionalidades, os bugs conhecidos e não solucionados, entre outras funções.</p>
+
+    <h3>Aba Insights</h3>
+    <p>É onde temos informações detalhadas do projeto, ou seja, quem sao os colaboradores, commits, forks e etc. A aba de insights é importante para se ter uma visão de como o projeto está evoluindo desde o inicio.</p>
+
+    <h3>Criando um Gist</h3>
+    <p>São pequenos blocos de código, normalmente relcionados a solução de algum problema, que podem ser armazendos no github e compartilhados</p>
+
 </body>
 </html>
